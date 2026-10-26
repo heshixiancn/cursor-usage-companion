@@ -12,7 +12,7 @@
 准备 Node.js 24、pnpm 10、Rust stable，以及对应平台的 Tauri 系统依赖。macOS 需要安装 Xcode Command Line Tools。
 
 ```bash
-git clone <本仓库地址>
+git clone https://github.com/heshixiancn/cursor-usage-companion.git
 cd cursor-usage-companion
 corepack enable
 pnpm install
