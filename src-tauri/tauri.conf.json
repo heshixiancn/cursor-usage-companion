@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "用量伙伴",
+  "version": "0.1.0",
+  "identifier": "com.githubdiscover.usagecompanion",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "用量伙伴",
+        "width": 1180,
+        "height": 780,
+        "minWidth": 900,
+        "minHeight": 650,
+        "center": true,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "shortDescription": "安全管理自有 AI 凭证与用量提醒",
+    "longDescription": "跨平台的合规用量助手。密钥存入系统凭证库，不修改设备标识或绕过订阅限制。",
+    "macOS": {
+      "minimumSystemVersion": "12.0"
+    }
+  }
+}
+
